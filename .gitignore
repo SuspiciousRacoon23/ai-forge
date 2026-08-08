@@ -1,0 +1,21 @@
+# AI-Forge (Python LLM/SLM training) — never commit heavy/derived artifacts
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Model weights & quantized exports (large binaries — store outside git)
+*.gguf
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+
+# Training & run outputs (regenerable, can be huge)
+training_runs/
+checkpoints/
+wandb/
+
+# Local data caches
+*.cache
+.DS_Store
